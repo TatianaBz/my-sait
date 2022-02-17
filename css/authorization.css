@@ -1,0 +1,59 @@
+/*Кнопка авторизации*/
+.authorization {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #161c35;
+  background-color: #ffd74b;
+  border-radius: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  padding: 16px 28px 14px 29px;
+  height: 50px;
+  width: 190px;
+}
+.authorization:hover,
+.authorization:focus{
+  background-color:#FFBD30;
+}
+.authorization:active{
+  opacity: 0.3;
+}
+/*Кнопка из header__top*/
+.header-authorization {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header-authorization {
+    display: block;
+    width: 188px;
+  }
+  .menu__authorization{
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .header-authorization {
+    display: none;
+  }
+  .menu__authorization{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 0;
+  }
+}
+
+/*Кнопка из header__menu*/
+
+/*Кнопка из promo*/
+.authorization--promo {
+  padding: 8px 28px;
+  height: 40px;
+  width: 190px;
+  flex-basis: 100%;
+}

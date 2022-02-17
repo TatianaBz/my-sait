@@ -1,0 +1,28 @@
+.flags {
+  background: url("/img/flags.jpg") no-repeat;
+  display: block;
+  text-indent: -9999px;
+  background-size: 155px auto;
+  width: 35px;
+  height: 25px;
+}
+
+.thailand {
+  background-position: -80px 0;
+}
+
+.belgium {
+  background-position: -40px -58px;
+}
+.czech {
+  background-position: -40px -28px;
+}
+.france {
+  background-position: -120px -28px;
+}
+.sri-lanka {
+  background-position: -80px -60px;
+ }
+ .seychelles {
+  background-position: 0px 0px;
+ }

@@ -1,0 +1,88 @@
+.address {
+  position: relative;
+  margin-top: -48px;
+  padding-bottom: 17px;
+  background-color: #ffd74b;
+  border-radius: 0 0 30px 30px;
+  z-index: 5;
+}
+/*центровка раздела*/
+.address__wrapper {
+  margin: 0 auto 0px auto;
+  padding: 66px 25px 50px 25px;
+  background-color: #ffd74b;
+}
+.address h2 {
+  position: absolute;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  padding: 0 60px;
+}
+.address h2::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 45px;
+  height: 45px;
+  background-image: url("/img/map_mark.png");
+}
+/*Кнопка Проложить маршрут*/
+.address__details-user {
+  margin-top: 70px;
+  position: relative;
+  border: 2px solid #000;
+}
+.address__details-user::after {
+  position: absolute;
+  content: "";
+  right: 24px;
+  top: 24px;
+  width: 11px;
+  height: 13px;
+  background-image: url("/img/polygon1.svg");
+}
+@media (min-width: 768px) {
+  /*центровка раздела*/
+  .address {
+    border-radius: 0 0 60px 60px;
+  }
+  .address__wrapper {
+    margin: 0 auto 0px auto;
+    padding: 127px 75px 42px 76px;
+  }
+  .address__details-user {
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  /*центровка раздела*/
+  .address {
+    margin-top: -105px;
+  }
+  .address__wrapper {
+    max-width: 1440px;
+    margin: 0 auto 0px auto;
+    padding: 208px 133px 87px 133px;
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+  }
+  .address__details-user {
+    width: 324px;
+    display: block;
+    margin: 0;
+  }
+  .address h2 {
+    position: static;
+    font-size: 28px;
+    line-height: 28px;
+  }
+}

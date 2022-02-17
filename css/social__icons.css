@@ -1,0 +1,27 @@
+/*Иконки соц сетей*/
+/*ширина блока 140рх высота 28px*/
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 140px;
+}
+.icons {
+  display: flex;
+  list-style: none;
+  width: 46px;
+  height: 28px;
+}
+.social-icon-fb {
+  background: no-repeat center center;
+  background-image: url("../img/icon_facebook.svg");
+}
+.social-icon-vk {
+  background: no-repeat center center;
+  background-image: url("../img/icon_vkontakte.svg");
+}
+.social-icon-in {
+  background: no-repeat center center;
+  background-image: url("../img/icon_instagram.svg");
+}
+

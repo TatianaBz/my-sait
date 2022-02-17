@@ -1,0 +1,157 @@
+.details {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1d2e5b;
+  background-color: #ffd74b;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 27px 33px 29px 33px;
+  height: 80px;
+  width: 276px;
+  cursor: pointer;
+}
+
+.about__details {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about__details {
+    display: block;
+    margin-left: 21px;
+    margin-top: 26px;
+  }
+}
+@media (min-width: 1440px) {
+  .about__details {
+    margin-left: 78px;
+    margin-top: 73px;
+  }
+}
+/*Кнопка в разделе НАПРАВЛЕНИЯ*/
+.details-country {
+  font-size: 18px;
+  line-height: 18px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 21px;
+  border-radius: 10px;
+  height: 62px;
+  display: block;
+}
+.direction__details-country {
+  width: 100%;
+  margin: 0 auto;
+}
+a.details-country {
+  position: relative;
+}
+a.details-country::after {
+  position: absolute;
+  content: "";
+  right: 24px;
+  top: 24px;
+  width: 11px;
+  height: 13px;
+  background-image: url("/img/polygon1.svg");
+}
+
+@media (min-width: 768px) {
+  .details-country {
+    font-size: 27px;
+    padding: 27px 29px 53px 27px;
+    margin: 46px 35px 0 62px;
+    width: auto;
+  }
+  a.details-country::after {
+    right: 31px;
+    top: 35px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .details-country {
+    width: 276px;
+    font-size: 27px;
+    line-height: 27px;
+    height: 80px;
+    order: 3;
+    flex-basis: auto;
+  }
+  .direction__details-country {
+    margin-left: 61%;
+    margin-top: -106.5px;
+  }
+  a.details-country::after {
+    top: 28px;
+  }
+}
+
+/*Кнопка в разделе ПОПУТЧИКИ*/
+.details-user {
+  font-size: 18px;
+  line-height: 18px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  border-radius: 10px;
+  height: 60px;
+  display: block;
+}
+.direction__details-user {
+  margin: 20px auto 0 auto;
+  width: 270px;
+   }
+a.direction__details-user {
+  position: relative;
+}
+a.details-user::after {
+  position: absolute;
+  content: "";
+  right: 24px;
+  top: 24px;
+  width: 11px;
+  height: 13px;
+  background-image: url("/img/polygon1.svg");
+}
+
+@media (min-width: 768px) {
+  .direction__details-user  {
+    margin: 81px auto 0 auto;
+     width: auto;
+     max-width: 768px;
+  }
+  .details-user {
+    padding-top: 29px;
+    padding-bottom: 49px;
+    padding-left: 28px;
+    }
+  .details-user {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .details-user {
+    width: 280px;
+    font-size: 27px;
+    line-height: 27px;
+    height: 80px;
+    order: 3;
+    border-radius:22px;
+    flex-basis: auto;
+  }
+  .direction__details-user {
+    margin-left: 7.2%;
+    margin-top:-80px;
+  }
+  a.details-user::after {
+    top: 28px;
+  }
+}
+

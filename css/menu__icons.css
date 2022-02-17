@@ -1,0 +1,77 @@
+/*иконки в меню*/
+.contact-icons {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.contact-icons li {
+  list-style: none;
+}
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #192144;
+}
+.contact-icons span {
+  margin-left: 10px;
+  display: block;
+}
+.contact-icons__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #192144;
+}
+.contact-icons li {
+  list-style: none;
+}
+.contact-icons__img {
+  fill: #ffbd30;
+}
+.contact-icons__img:hover,
+.contact-icons__img:focus {
+  fill: #f26926;
+}
+.contact-icons__img:active {
+  opacity: 0.3;
+}
+.contact-icons a {
+  color: #192144;
+}
+.contact-icons a:hover,
+.contact-icons a:focus {
+  color: #f26926;
+}
+.contact-icons a:active {
+  opacity: 0.3;
+}
+@media (min-width: 768px) {
+  .contact-icons__img {
+    width: 68px;
+    height: 68px;
+  }
+  .contact-icons a {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 1440px) {
+  .menu__contact-icons {
+    display: none;
+  }
+}
+/*Скрытые иконки соц сетей на десктопе*/
+@media (min-width: 1440px) {
+  .menu__social-icons.social-icons{
+    display: none;
+  }
+}

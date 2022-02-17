@@ -1,0 +1,23 @@
+/*Логотип сайта в верхнем левом углу*/
+
+.logotip-hidden{
+  display: none;
+}
+
+.logotip {
+  width:96px;
+  height: auto;
+ }
+@media (min-width: 768px) {
+  .logotip{
+    width: 166px;
+    height: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .logotip {
+    width: 200px;
+    height: auto;
+  }
+}
+

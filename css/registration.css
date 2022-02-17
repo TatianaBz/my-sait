@@ -1,0 +1,235 @@
+.registration {
+  position: relative;
+  margin-top: -57px;
+  padding-bottom: 17px;
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
+  z-index: 6;
+}
+/*центровка раздела*/
+.registration__wrapper {
+  margin: 0 auto 0px auto;
+  padding: 127px 25px 6px 25px;
+  background-color: #192144;
+}
+.registration h2 {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ff8d30;
+  padding: 0 30px;
+}
+.registration p {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  margin: 20px 0 0 0;
+  padding: 0 35px;
+}
+.registration a {
+  text-decoration: none;
+}
+.registration span {
+  color: #ffd74b;
+  border-bottom: 1px solid #ffd74b;
+}
+.registration span:hover,
+.registration span:focus {
+  color: #ff8d30;
+  border-bottom: 1px solid #ff8d30;
+}
+.registration span:active {
+  color: #ff8d304d;
+  border-bottom: 1px solid #ff8d304d;
+}
+/*форма для отправки номера телефона пользователя*/
+.registration__input {
+  position: relative;
+  margin: 32px auto -19px auto;
+}
+.registration__input input {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ccc;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 22px 0 22px 37px;
+  margin-bottom: 25px;
+}
+.registration__input input:focus,
+.registration__input input:hover {
+  background-color: #edeff6;
+}
+.registration__input input:active {
+  background-color: #192144;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.registration__input input:invalid {
+  color: #ff0000;
+}
+.registration__input button {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 68px;
+  width: 62px;
+  background-color: #ffd74b;
+  border-radius: 8px;
+  border: none;
+  z-index: 9;
+}
+.registration__input button::after {
+  position: absolute;
+  content: "";
+  right: 24px;
+  top: 24px;
+  width: 11px;
+  height: 13px;
+  background-image: url("/img/polygon1.svg");
+  background-repeat: no-repeat;
+}
+/*Тел и почта сервиса*/
+.registration__contact-icons {
+  margin-top: 17px;
+}
+.contact-icons__link span {
+  color: #ffbd30;
+  border-bottom: none;
+}
+.contact-icons__link span:hover,
+.contact-icons__link span:focus {
+  color: #ff8d30;
+}
+.contact-icons__link span:active {
+  opacity: 0.3;
+}
+.contact-icons__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.contact-icons__img {
+  fill: #ffbd30;
+}
+.contact-icons__img:hover,
+.contact-icons__img:focus {
+  fill: #f26926;
+}
+.contact-icons__img:active {
+  opacity: 0.3;
+}
+@media (min-width: 768px) {
+  /*центровка раздела*/
+  .registration {
+    border-radius: 0 0 60px 60px;
+  }
+  .registration__wrapper {
+    margin: 0 auto 0px auto;
+    padding: 127px 75px 42px 76px;
+  }
+  .registration h2 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .registration p {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    padding: 0;
+  }
+  /*форма для отправки номера телефона пользователя*/
+  .registration__input {
+    margin: 70px auto -29px auto;
+  }
+  .registration__input input {
+    font-size: 28px;
+    padding: 22px 0 22px 32px;
+    border-radius: 18px;
+  }
+  .registration__input button {
+    border-radius: 0 18px 18px 0;
+    height: 79px;
+    width: 79px;
+  }
+  /*Тел и почта сервиса*/
+  .registration__contact-icons {
+    margin-top: 45px;
+  }
+  .contact-icons__img {
+    width: 68px;
+    height: 68px;
+  }
+  .registration__contact-icons span {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  /*центровка раздела*/
+  .registration {
+    margin-top: -105px;
+  }
+  .registration__wrapper {
+    max-width: 1440px;
+    margin: 0 auto 0px auto;
+    padding: 208px 133px 87px 133px;
+  }
+   .registration p {
+    width: 665px;
+    margin: 60px auto 0 auto;
+  }
+
+  /*форма для отправки номера телефона пользователя*/
+  .registration__input {
+    margin: 61px auto -18px auto;
+  }
+  .registration__input button {
+    height: 79px;
+    width: 330px;
+     }
+  .registration__input button::before {
+    content: "Регистрация";
+    font-family: "Blogger Sans", "Arial", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 117px;
+  }
+  .registration__input button::after {
+    top: 35px;
+    right: 35px;
+    }
+
+    /*Тел и почта сервиса*/
+  .registration__contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 44px;
+  }
+  .contact-icons__img {
+    width: 90px;
+    height: 90px;
+  }
+}

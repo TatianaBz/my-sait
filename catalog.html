@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preload" href="/fonts/bloggersans-medium.woff2" as="font" type="font/woff" crossorigin="anonymous" />
+	<link rel="stylesheet" href="/css/fonts.css" />
+	<link rel="stylesheet" href="/normalize.css" />
+	<title>Погнали</title>
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header ">
+			<div class="header__top header-color ">
+				<div class="logo">
+					<a href="">
+						<picture>
+							<source media="(min-width:1440px)" srcset="/img/logo_desktop--black.svg" />
+							<source media="(min-width:768px)" srcset="/img/logo_tablet--black.svg" />
+							<img class="logotip logotip-black hidden" src="/img/logo_mobile--black.svg" width="96"
+								alt="Логотип сервиса Погнали" title="Логотип сервиса Погнали" />
+						</picture>
+						<picture>
+							<source media="(min-width:1440px)" srcset="/img/logo_desktop.svg" />
+							<source media="(min-width:768px)" srcset="/img/logo_tablet.svg" />
+							<img class="logotip logotip-white" src="/img/logo_mobile.svg" width="96" alt="Логотип сервиса Погнали" />
+						</picture>
+					</a>
+				</div>
+				<div class="buttons">
+					<button class="burger burger-scroll" type="button">
+						<span class="visually-hidden">Открыть меню</span>
+					</button>
+					<button class="close hidden" type="button">
+						<span class="visually-hidden">Скрыть меню.Нажми ESCepe</span>
+					</button>
+				</div>
+				<a href="#" class="authorization header-authorization">Авторизация</a>
+				<div class="menu menu__content hidden">
+					<div class="menu-wrapper">
+						<nav class="menu__nav hover-effect">
+							<ul>
+								<li class="li"></li>
+								<li><a class="menu__link" href="#"><span data-hover="О сервисе">О сервисе</span></a></li>
+								<li><a class="menu__link" href="#"><span data-hover="Направления">Направления</span></a></li>
+								<li><a class="menu__link" href="#"><span data-hover="Попутчики">Попутчики</span></a>
+								</li>
+							</ul>
+						</nav>
+						<div class="menu__header">
+							<ul class="header__btn btn">
+								<li>
+									<a class="btn--tel" href="tel:+7888888">
+										<img src="/img/icon_call.svg" height="18" width="18" alt="Телефон сервиса:" />
+										<span class="visually-hidden">+7 (888) 888 - 888</span>
+									</a>
+								</li>
+								<li>
+									<a class="btn--mail" href="mailto:mail@mail">
+										<img src="/img/icon_mail.svg" height="14" width="16" alt="Почта сервиса:" />
+										<span class="visually-hidden">post@post.com</span>
+									</a>
+								</li>
+							</ul>
+							<a href="#" class="authorization menu__authorization">Авторизация</a>
+						</div>
+						<ul class="menu__contact-icons contact-icons">
+							<li>
+								<div class="contact-icons__link">
+									<a href="tel:+7888888">
+										<svg class="contact-icons__img">
+											<use xlink:href="img/sprite.svg#contact-tel"></use>
+										</svg>
+										<span>+7 (888) 888 - 888</span>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="contact-icons__link">
+									<a href="mailto:mail@mail">
+										<svg class="contact-icons__img">
+											<use xlink:href="img/sprite.svg#contact-mail"></use>
+										</svg>
+										<span>post@post.com</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="menu__social-icons social-icons" aria-label="Сервис в соцсетях">
+							<li class="social-icon-fb icons">
+								<a href="#">
+									<span class="visually-hidden">Facebook</span>
+								</a>
+							</li>
+							<li class="social-icon-vk icons">
+								<a href="#">
+									<span class="visually-hidden">Вконтакте</span>
+								</a>
+							</li>
+							<li class="social-icon-in icons">
+								<a href="#">
+									<span class="visually-hidden">Instagramm</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="catalog-main">
+			<h1 class="visually-hidden">Каталог сайта сервиса "Погнали"</h1>
+			<section class="saitnav">
+				<div class="saitnav__item-wrapper">
+					<div class="saitnav__item-title">
+						<h2>Попутчики</h2>
+					</div>
+					<div class="saitnav__back-icon back-icon">
+						<p>на главную</p>
+					</div>
+				</div>
+			</section>
+			<section class="filters">
+				<div class="filters__wrapper">
+					<h2 class="visually-hidden">Каталог сайта сервиса "Погнали"</h2>
+				</div>
+			</section>
+			<section class="selection">
+				<div class="selection__wrapper">
+					<h2 class="visually-hidden">опции для выбора попутчика</h2>
+					<p>Подберите идеального попутчика</p>
+					<form class="selection__form form" action="#" method="post">
+
+						<h3>хобби</h3>
+						<h3>музыка</h3>
+						<fieldset>
+							<label for="rock" class="check option ">
+								<input type="checkbox" name="rock" checked id="rock" class="visually-hidden check__input">
+								<span class="check__box"></span>
+								Тяжелый рок</label>
+							<label for="rep" class="check option">
+								<input type="checkbox" name="rep" checked id="rep" class="visually-hidden check__input"> <span
+									class="check__box"></span>Русский рэп</label>
+							<label for="dens" class="check option">
+								<input type="checkbox" name="dens" id="dens" class="visually-hidden check__input"> <span
+									class="check__box"></span>Евроденс</label>
+						</fieldset>
+
+						<h3>еда</h3>
+						<h3>транспорт</h3>
+						<fieldset>
+							<label for="plane" class="positions">
+								<input type="checkbox" name="dens" id="plane" class="visually-hidden check__input">
+								<span class="selection__tooltip" aria-labelledby="tooltip-plane">
+									<svg class="selection__icon" width="18" height="20">
+										<use xlink:href="img/sprite.svg#plane">
+										</use>
+									</svg>
+								</span>
+								<span class="tooltip-mark" role="tooltip" id="tooltip-plane">
+									самолет
+								</span>
+							</label>
+
+							<label for="bus" class="positions">
+								<input type="checkbox" name="dens" id="bus" class="visually-hidden check__input">
+								<span class="selection__tooltip" aria-labelledby="tooltip-bus">
+									<svg class="selection__icon" width="18" height="21">
+										<use xlink:href="img/sprite.svg#bus">
+										</use>
+									</svg>
+								</span>
+								<span class="tooltip-mark" role="tooltip" id="tooltip-bus">
+									автобус
+								</span>
+							</label>
+
+							<label for="bicycle" class="positions">
+								<input type="checkbox" name="dens" id="bicycle" class="visually-hidden check__input">
+								<span class="selection__tooltip" aria-labelledby="tooltip-bicycle">
+									<svg class="selection__icon" width="25" height="24">
+										<use xlink:href="img/sprite.svg#bicycle">
+										</use>
+									</svg>
+								</span>
+								<span class="tooltip-mark" role="tooltip" id="tooltip-bicycle">
+									велосипед
+								</span>
+							</label>
+
+							<label for="run" class="positions">
+								<input type="checkbox" name="dens" id="run" class="visually-hidden check__input">
+								<span class="selection__tooltip" aria-labelledby="tooltip-run">
+									<svg class="selection__icon" width="21" height="24">
+										<use xlink:href="img/sprite.svg#run">
+										</use>
+									</svg>
+								</span>
+								<span class="tooltip-mark" role="tooltip" id="tooltip-run">
+									пешком
+								</span>
+							</label>
+						</fieldset>
+						<h3 class="level">левел</h3>
+						<fieldset>
+						<table>
+							<tr>
+								<td>30</td>
+								<td>100</td>
+							</tr>
+						</table>
+							<input class="level__range" type="range" name="level" value="30" min="30" max="30" >
+						</fieldset>
+						<button class="selection__button-filter button-filter" type="text">Показать</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer footer__sait">
+			<h2 class="visually-hidden">Информация о сайте сервса "Погнали"</h2>
+			<div class="header__top--footer">
+				<a href="">
+					<picture>
+						<source media="(min-width:1440px)" srcset="/img/logo_desktop--black.svg" />
+						<source media="(min-width:768px)" srcset="/img/logo_tablet--black.svg" />
+						<img class="logotip" src="/img/logo_mobile--black.svg" width="96" alt="Логотип сервиса Погнали"
+							title="Логотип сервиса Погнали" />
+					</picture>
+				</a>
+			</div>
+			<ul class="footer__social-icons social-icons" aria-label="Сервис в соцсетях">
+				<li class="social-icon-fb icons icons-footer">
+					<a href="#">
+						<span class="visually-hidden">Facebook</span>
+					</a>
+				</li>
+				<li class="social-icon-vk icons icons-footer">
+					<a href="#">
+						<span class="visually-hidden">Вконтакте</span>
+					</a>
+				</li>
+				<li class="social-icon-in icons icons-footer">
+					<a href="#">
+						<span class="visually-hidden">Instagramm</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<script src="/js/inert.js"></script>
+		<script src="/js/map.js"></script>
+		<script src="/js/main.js"></script>
+	</div>
+</body>
+
+</html>

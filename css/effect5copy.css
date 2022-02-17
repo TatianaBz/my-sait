@@ -1,0 +1,51 @@
+@media (min-width: 1440px) {
+	*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.hover-effect a {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-effect a {
+  overflow: hidden;
+  padding: 0 4px;
+	line-height: 30px;
+  height: 30px;
+}
+
+.hover-effect a span {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.hover-effect a span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  width: 100px;
+  color: #FFD74B;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.hover-effect a:hover span,
+.hover-effect a:focus span
+ {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.hover-effect a:active span{
+  opacity:0.3;
+}
+}

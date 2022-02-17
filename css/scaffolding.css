@@ -1,0 +1,47 @@
+*, html{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body {
+  font-size: 15px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  color: #131314;
+  font-style: normal;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.hidden{
+  display: none;
+}
+.active{
+  display: block;
+}
+/*выравнивание футура*/
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+main{
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}

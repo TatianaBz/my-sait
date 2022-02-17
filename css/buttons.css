@@ -1,0 +1,57 @@
+/*кнопка открытия - закрытия главного меню в верху сайта*/
+.burger,
+.close {
+  width: 19px;
+  height: 19px;
+  position: relative;
+  background-color:rgb(201, 24, 24);
+  border: none;
+  cursor: pointer;
+}
+/*Кнопка-бургер для открытия меню*/
+.burger::after{
+  position: absolute;
+  content:"";
+  top:4px;
+  left: 0px;
+  height: 2px;
+  width: 19px;
+  background-color:#ccc;
+}
+.burger::before{
+  position: absolute;
+  content:"";
+  top:13px;
+  left: 0px;
+  height: 2px;
+  width: 19px;
+  background-color:#ccc;
+}
+
+/*Кнопка-крестик для закрытия меню*/
+.close::after{
+  position: absolute;
+  content:"";
+  top:9px;
+  left: -2px;
+  height: 2px;
+  width: 23px;
+  transform: rotate(45deg);
+  background-color:#ccc;
+}
+.close::before{
+  position: absolute;
+  content:"";
+  top:9px;
+  left: -2px;
+  height: 2px;
+  width: 23px;
+  transform: rotate(-45deg);
+  background-color:#ccc;
+}
+@media (min-width: 1440px) {
+  .burger,
+  .close  {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+.tooltip {
+  position: relative;
+ }
+.tooltip button {
+  border: none;
+flex-basis: 100%;
+}
+.tooltip .tooltip-text {
+  position: absolute;
+  left: 68px;
+  top: -20px;
+  background-color: #101d41;
+  padding: 10px;
+  border-radius: 7px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+  display: none;
+}
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 14px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 8.7px 5px 0;
+  border-color: transparent #101d41 transparent transparent;
+  display: none;
+}
+.tooltip-text::before,
+.tooltip button:focus + .tooltip-text {
+  display: block;
+}
+
+/*Тутлипы для карточек пользователей*/
+.tooltip .tooltip-text--user {
+  position: absolute;
+  left: -17px;
+  top: 30px;
+  z-index: 1;
+}
+.tooltip-text--user::before {
+  left: calc(50% - 10px);
+  top: -8px;
+  border-style: solid;
+  border-width: 0 5px 8.7px 5px;
+  border-color: transparent transparent #101d41 transparent;
+}

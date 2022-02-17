@@ -1,0 +1,291 @@
+/*Попутчики*/
+/* Внешний контейнер*/
+.traveler {
+  position: relative;
+  margin-top: -48px;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
+  z-index: 8;
+}
+/*Заголовок раздела*/
+.traveler__wrapper {
+  margin: 0px auto;
+  padding-bottom: 12px;
+  padding-right: 25px;
+  padding-left: 25px;
+  max-width: 320px;
+  background-color: #192144;
+  background: url("/img/smolov-back-desktop.png") 100% top no-repeat,
+    url("/img/back--trevel.png") 0 0 no-repeat,
+    url("/img/rogovaya-back-desktop.png") 0 272px no-repeat;
+}
+.traveler__promo {
+  margin: 68px 0 0 25px;
+}
+.traveler__promo h2 {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff8d30;
+  padding-top: 30px;
+}
+.traveler__promo p {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  margin: 19px 0 0 0;
+  width: 220px;
+}
+.traveler__promo span {
+  display: block;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  margin: 21px 0 0 0;
+}
+
+/*карточки учасников*/
+.traveler__card {
+  margin: 56px 0 0 0;
+}
+/*Эффект движения картинки при наведении*/
+.traveler__userfoto {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  width: 270px;
+  height: 270px;
+}
+.traveler__img {
+  transition: 1s;
+}
+.traveler__img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.traveler__card > li {
+  background-color: #fff;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  width: 270px;
+  margin-top: 10px;
+  list-style-type: none;
+  margin-left: 0;
+}
+.traveler__content {
+  padding-bottom: 25px;
+}
+
+.traveler__flags {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 162px;
+  margin: 0 auto;
+  margin-top: -11px;
+}
+.traveler__flags li {
+  list-style-type: none;
+  margin-left: 0;
+}
+.traveler__content h3 {
+  position: relative;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1d2e5b;
+  padding: 0;
+  margin: 11px 0 0 0;
+}
+.traveler__content h3::before {
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 53px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #f97676;
+}
+.traveler__content--pd h3::before {
+  background-color: #81e31e;
+}
+.traveler__content span {
+  display: block;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #444444;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+/*Виды транспорта*/
+.traveler__transport {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto 0 auto;
+  width: 100px;
+  padding-bottom: 14px;
+}
+.traveler__transport li {
+  list-style-type: none;
+  margin-left: 0;
+}
+.transport {
+  position: absolute;
+  fill: #ccc;
+  z-index: 1;
+}
+[aria-labelledby$="2"] .plane,
+[aria-labelledby$="1"] .plane,
+[aria-labelledby$="2"] .bus,
+[aria-labelledby$="2"] .run {
+  fill: #101d41;
+}
+
+@media (min-width: 768px) {
+  .traveler {
+    padding-bottom: 90px;
+    border-radius: 0 0 60px 60px;
+  }
+  .traveler__wrapper {
+    max-width: 768px;
+    padding-left: 46px;
+    background-color: #192144;
+    background: url("/img/back-tablet.png") 0 0 no-repeat,
+      url("/img/rogovaya-back-tablet.png") 85% 9px no-repeat,
+      url("/img/smolov-back-tablet.png") 0 407px no-repeat;
+    margin: 104px auto 0 auto;
+    padding: 0 75px;
+  }
+  .traveler__card > li {
+    width: 285px;
+  }
+   .traveler__userfoto {
+    width: 286px;
+    height: 285px;
+  }
+  .traveler__promo{
+    margin-left: 0;
+  }
+  .traveler__promo h2 {
+    font-size: 45px;
+    line-height: 45px;
+    padding-top: 65px;
+    width: 427px;
+  }
+
+  .traveler__promo p {
+    font-size: 28px;
+    line-height: 34px;
+    margin: 55px 0 0 0;
+    width: 427px;
+  }
+  .traveler__promo span {
+    display: block;
+    font-size: 21px;
+    line-height: 24px;
+    padding: 0;
+    margin: 39px 0 0 0;
+    width: 427px;
+  }
+  .traveler__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 54px 0 0 0;
+  }
+  .traveler__content h3 {
+    font-size: 24px;
+    line-height: 22px;
+    padding: 0;
+    margin: 17px 0 0 0;
+  }
+  .traveler__content h3::before {
+    top: 9px;
+    left: 47px;
+    width: 8px;
+  height: 8px;
+  }
+  .traveler__content span {
+    font-size: 20px;
+    line-height: 23px;
+    margin: 23px 0 0 0;
+  }
+  .traveler__transport {
+    margin: 12px auto 0 auto;
+    padding-bottom: 21px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .traveler {
+    padding-bottom: 136px;
+  }
+  .traveler__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding-right: 0;
+    background: url("/img/back-tablet.png") 0 0 no-repeat,
+      url("/img/rogovaya-back-tablet.png") 190px 121% no-repeat,
+      url("/img/smolov-back-tablet.png") 41% -5px no-repeat;
+    padding: 50px 60px 0 34px;
+  }
+  .traveler__promo {
+    margin-top: 5px;
+    margin-left: 27px;
+  }
+  .traveler__promo h2 {
+    padding: 0 0 0 68px;
+  }
+  .traveler__promo p {
+    margin-left: 68px;
+  }
+  .traveler__promo span {
+    margin-left: 68px;
+  }
+  .traveler__card {
+    width: 47%;
+    margin: 4px 0 0 0;
+  }
+  .traveler__userfoto {
+    width: 286px;
+    height: 285px;
+  }
+  .traveler__card > li {
+    width: 286px;
+  }
+  .traveler__content h3 {
+    margin: 15px 0 0 0;
+  }
+
+  .traveler__transport {
+    margin: 14px auto 0 auto;
+    padding-bottom: 22px;
+  }
+}
