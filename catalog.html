@@ -127,6 +127,12 @@
 					<h2 class="visually-hidden">Каталог сайта сервиса "Погнали"</h2>
 				</div>
 			</section>
+			<section class="country-filters">
+				<div class="country-filters__wrapper">
+
+
+				</div>
+			</section>
 			<section class="selection">
 				<div class="selection__wrapper">
 					<h2 class="visually-hidden">опции для выбора попутчика</h2>
@@ -134,25 +140,25 @@
 					<form class="selection__form form" action="#" method="post">
 
 						<h3 class="selection__hobby">хобби</h3>
-						<h3 class="selection__music">музыка</h3>
-						<fieldset>
-							<label for="rock" class="check option ">
+						<h3 class="selection__music opened">музыка</h3>
+						<fieldset class="selection__fielset">
+							<label for="rock" class="selection__checkbox option ">
 								<input type="checkbox" name="rock" checked id="rock" class="visually-hidden check__input">
 								<span class="check__box"></span>
 								Тяжелый рок</label>
-							<label for="rep" class="check option">
+							<label for="rep" class="selection__checkbox option">
 								<input type="checkbox" name="rep" checked id="rep" class="visually-hidden check__input"> <span
 									class="check__box"></span>Русский рэп</label>
-							<label for="dens" class="check option">
+							<label for="dens" class="selection__checkbox option">
 								<input type="checkbox" name="dens" id="dens" class="visually-hidden check__input"> <span
 									class="check__box"></span>Евроденс</label>
 						</fieldset>
 
 						<h3 class="selection__eat">еда</h3>
-						<h3 class="selection__transport">транспорт</h3>
-						<fieldset>
+						<h3 class="selection__transport opened">транспорт</h3>
+						<fieldset class="selection__fielset">
 							<label for="plane" class="positions">
-								<input type="checkbox" name="dens" id="plane" class="visually-hidden check__input">
+								<input type="checkbox " name="dens" id="plane" class="visually-hidden check__input">
 								<span class="selection__tooltip" aria-labelledby="tooltip-plane">
 									<svg class="selection__icon" width="18" height="20">
 										<use xlink:href="img/sprite.svg#plane">
@@ -165,7 +171,7 @@
 							</label>
 
 							<label for="bus" class="positions">
-								<input type="checkbox" name="dens" id="bus" class="visually-hidden check__input">
+								<input type="checkbox " name="dens" id="bus" class="visually-hidden check__input">
 								<span class="selection__tooltip" aria-labelledby="tooltip-bus">
 									<svg class="selection__icon" width="18" height="21">
 										<use xlink:href="img/sprite.svg#bus">
@@ -178,7 +184,7 @@
 							</label>
 
 							<label for="bicycle" class="positions">
-								<input type="checkbox" name="dens" id="bicycle" class="visually-hidden check__input">
+								<input type="checkbox " name="dens" id="bicycle" class="visually-hidden check__input">
 								<span class="selection__tooltip" aria-labelledby="tooltip-bicycle">
 									<svg class="selection__icon" width="25" height="24">
 										<use xlink:href="img/sprite.svg#bicycle">
@@ -191,7 +197,7 @@
 							</label>
 
 							<label for="run" class="positions">
-								<input type="checkbox" name="dens" id="run" class="visually-hidden check__input">
+								<input type="checkbox " name="dens" id="run" class="visually-hidden check__input">
 								<span class="selection__tooltip" aria-labelledby="tooltip-run">
 									<svg class="selection__icon" width="21" height="24">
 										<use xlink:href="img/sprite.svg#run">
@@ -203,15 +209,15 @@
 								</span>
 							</label>
 						</fieldset>
-						<h3 class="selection__level">левел</h3>
-						<fieldset>
+						<h3 class="selection__level opened">левел</h3>
+						<fieldset class="selection__fielset">
 						<table>
 							<tr>
 								<td>30</td>
 								<td>100</td>
 							</tr>
 						</table>
-							<input class="level__range" type="range" name="level" value="30" min="30" max="30" >
+							<input class="level-range section__level-range" type="range" name="level" value="30" min="27" max="30" >
 						</fieldset>
 						<button class="selection__button-filter button-filter" type="text">Показать</button>
 					</form>

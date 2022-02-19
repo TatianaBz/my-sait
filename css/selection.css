@@ -1,12 +1,12 @@
 .selection {
-  margin: 20px 25px 130px 25px;
+  margin: 75px 25px 130px 25px;
   background-color: #ffd74b;
-  border-radius:20px;
+  border-radius: 20px;
   position: relative;
   z-index: 10;
 }
 .selection__wrapper {
-  padding: 25px;
+  padding: 25px 20px 22px 20px;
 }
 .selection p {
   font-family: "Blogger Sans", "Arial", sans-serif;
@@ -19,7 +19,7 @@
   color: #1d2e5b;
   width: 50%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 5px;
 }
 .selection h3 {
   position: relative;
@@ -35,14 +35,19 @@
   width: 100%;
   word-break: break-word;
   display: flex;
+  margin-top: 8px;
+  padding-top: 11px;
+  padding-left: 5px;
+  border-top: 1px solid #f3c72b;
 }
 .selection h3::before {
   position: absolute;
   content: "";
-  left: calc(100% + 10px);
+  top: 17px;
+  left: calc(100% - 10px);
   width: 10px;
   height: 6px;
-  background: url("/img/polygon6.svg") no-repeat;
+  background: url("/img/polygon5.svg") no-repeat;
 }
 .selection h3:focus,
 .selection h3:hover {
@@ -57,35 +62,39 @@
   display: none;
 }
 .selection h3:not(.opened)::before {
-  background: url("/img/polygon5.svg") no-repeat;
+  background: url("/img/polygon6.svg") no-repeat;
 }
 
 /*Чек боксы*/
 /*отступ формы от верхней границы*/
 .selection__form {
-  margin-top: 16px;
+  margin-top: 25px;
 }
 
 /*обводка раздела формы*/
 .selection__form fieldset {
   border: none;
-  padding: 0;
+}
+.selection__fielset {
+  padding: 16px 10px 0 10px;
 }
 .option {
   display: block;
-  margin-bottom: 10px;
   cursor: pointer;
 }
-/* отступ чекбоска от надписи*/
-.check {
-  padding-left: 27px;
+/*позиционирование чекбоксов
+отступ чекбоска от надписи 22px*/
+.selection__checkbox{
+  margin-bottom: 13px;
+  padding-left: 22px;
 }
-/*стили для кастомного чекбокса (margin-left: -27px; отступ самой надписи)*/
+
+/*стили для кастомного чекбокса (margin-left: -26px; отступ самой надписи)*/
 .check__box {
   position: absolute;
   width: 18px;
   height: 18px;
-  margin-left: -27px;
+  margin-left: -26px;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -110,10 +119,10 @@
 /*стили для транспорных иконок*/
 .selection__icon {
   background-color: #fff;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  padding: 6px 0 0 6px;
+  padding: 4px 0 0 4px;
 }
 .check__input:checked ~ .selection__tooltip .selection__icon {
   fill: #ccc;
@@ -158,28 +167,27 @@
 /*google chrome, safari, opera*/
 
 /*стилизация ползунка*/
-.level__range {
+.level-range {
   -webkit-appearance: none;
   position: relative;
   background-color: #1d2e5b;
-  width:70%;
+  width: 70%;
   height: 2px;
   border-radius: 4px;
-margin-left: 30%;
 }
-.level__range::after {
+.level-range::after {
   position: absolute;
   content: "";
   width: 45%;
   height: 2px;
   top: 0;
   left: -45%;
-  background-color:#ccc;
+  background-color: #ccc;
   z-index: 11;
 }
 
 /*стилизация кнопки*/
-.level__range::-webkit-slider-thumb {
+.level-range::-webkit-slider-thumb {
   position: relative;
   -webkit-appearance: none;
   background-color: #1d2e5b;
@@ -189,28 +197,27 @@ margin-left: 30%;
   cursor: pointer;
   z-index: 12;
   transition: 1s;
-
 }
-.level__range::before{
+.level-range::before {
   position: absolute;
   content: "";
-  background-color:#1d2e5b;
+  background-color: #1d2e5b;
   border-radius: 50%;
   width: 13px;
   height: 13px;
   top: -6px;
-  left: calc(100% - 6px);
+  left: calc(100% - 13px);
   z-index: 11;
 }
 /*mozilla firefox*/
-.level__range::-moz-range-track {
+.level-range::-moz-range-track {
   position: relative;
   background-color: #1d2e5b;
   width: 200px;
   height: 2px;
   border-radius: 4px;
 }
-.level__range::-moz-range-thumb {
+.level-range::-moz-range-thumb {
   position: relative;
   background-color: #1d2e5b;
   width: 13px;
@@ -219,17 +226,20 @@ margin-left: 30%;
   cursor: pointer;
   z-index: 12;
 }
-.level__range::-webkit-slider-thumb:hover,
-.level__range:hover::before,
-.level__range::-webkit-slider-thumb:focus,
-.level__range:focus::before
- {
+.level-range::-webkit-slider-thumb:hover,
+.level-range:hover::before,
+.level-range::-webkit-slider-thumb:focus,
+.level-range:focus::before {
   transform: scale(1.5);
 }
-.level__range::-webkit-slider-thumb:active,
-.level__range:active::before{
+.level-range::-webkit-slider-thumb:active,
+.level-range:active::before {
   transform: scale(1.5);
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.24);
+}
+.section__level-range{
+  padding: 0;
+  margin: 25px 0 0 33%;
 }
 /*числовые значения*/
 table {
@@ -245,18 +255,20 @@ table {
   letter-spacing: 0.07em;
   text-align: center;
   color: #cbced9;
+margin-top: -3px;
+
 }
 table td {
   border: 1px solid #cbced9;
   width: 50%;
 }
 table td:focus,
-table td:hover{
+table td:hover {
   border: 1px solid #9a9ead;
- }
- table td:active {
+}
+table td:active {
   border: 1px solid #1d2e5b;
- }
+}
 table::before {
   position: absolute;
   content: "";
@@ -275,4 +287,13 @@ table::after {
   top: calc(50% - 1px);
   left: calc(50% - 5px);
   background-color: #959bb2;
+}
+/*позиционирование кнопки*/
+.selection__button-filter{
+margin-top: 20px;
+
+}
+/*Дополнительные стили для подразадела УРОВНИ*/
+h3.selection__level {
+  margin-top: 18px;
 }
