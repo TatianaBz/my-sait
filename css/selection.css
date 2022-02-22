@@ -1,5 +1,5 @@
 .selection {
-  margin: 75px 25px 130px 25px;
+  margin: 20px 25px 130px 25px;
   background-color: #ffd74b;
   border-radius: 20px;
   position: relative;
@@ -242,7 +242,7 @@
   margin: 25px 0 0 33%;
 }
 /*числовые значения*/
-table {
+.section__table {
   position: relative;
   border-collapse: collapse;
   width: 100%;
@@ -258,18 +258,18 @@ table {
 margin-top: -3px;
 
 }
-table td {
+.section__table td {
   border: 1px solid #cbced9;
   width: 50%;
 }
-table td:focus,
-table td:hover {
+.section__table td:focus,
+.section__table td:hover {
   border: 1px solid #9a9ead;
 }
-table td:active {
+.section__table td:active {
   border: 1px solid #1d2e5b;
 }
-table::before {
+.section__table::before {
   position: absolute;
   content: "";
   width: 15px;
@@ -279,7 +279,7 @@ table::before {
   left: 45%;
   background-color: #ffd74b;
 }
-table::after {
+.section__table::after {
   position: absolute;
   content: "";
   width: 10px;
@@ -295,5 +295,5 @@ margin-top: 20px;
 }
 /*Дополнительные стили для подразадела УРОВНИ*/
 h3.selection__level {
-  margin-top: 18px;
+  margin-top: 18gitpx;
 }

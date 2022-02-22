@@ -154,3 +154,4 @@ for (let bus of buss) {
 		this.classList.remove('activ');
 	});
 }
+
